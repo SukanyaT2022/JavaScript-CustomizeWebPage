@@ -16,15 +16,33 @@
 <h3>For page background colors</h3>
 <!-- we use name= groupRadio--we use the same so user can choose only one radio
 if we use differeent name user can choose more than one radio -->
-<input type="radio"  name="groupRadio" id="radio1" value="red" onclick="radioChangeBG('radio1')"/> 
+<input type="radio"  name="groupRadio" id="radio1" value="red" onclick="radioChangeBG('radio1')"/> red
 <!-- use id in parameter so we know whic radio button -->
-<input type="radio"  name="groupRadio" id="radio2" value="pink" onclick="radioChangeBG('radio2')"/>
-<input type="radio"  name="groupRadio" id="radio3" value="blue" onclick="radioChangeBG('radio3')"/>
+<input type="radio"  name="groupRadio" id="radio2" value="pink" onclick="radioChangeBG('radio2')"/>pink
+<input type="radio"  name="groupRadio" id="radio3" value="blue" onclick="radioChangeBG('radio3')"/>blue
 
+<!-- change font color -->
 <h3>For front color of heading</h3>
 <input type="radio"  name="groupFrontColor" id="frontColor1" value="pink" onclick="colorStyle('frontColor1')"/> pink
 <input type="radio"  name="groupFrontColor" id="frontColor2" value="Red" onclick="colorStyle('frontColor2')"/> red
 <input type="radio"  name="groupFrontColor" id="frontColor3" value="purple" onclick="colorStyle('frontColor3')"/> purple
+<br>
+<!-- change alignment header to left and right -->
+<h3>Change Alignment</h3>
+<input type="radio"  name="groupAlignment" id="left" value="left" onclick="changeAlignment('left')"/> left
+<input type="radio"  name="groupAlignment" id="right" value="right" onclick="changeAlignment('right')"/> right
+<input type="radio"  name="groupAlignment" id="center" value="center" onclick="changeAlignment('center')"/> center
+
+<h3>Change Heading Font Size</h3>
+<p>Enter font size</p>
+<input type="text" id="changeFont" />
+<button onclick="changeFontSize()">Submit</button>
+
+<h3>Change font style</h3>
+use difffernt name or use check box - so user can choose more than one choice
+<input type="checkbox" name="italic" id = "italic" value="italic" onclick="changeFontStyle()" />italic
+<input type="checkbox" name="underline" id = "underline" value="underline" onclick="changeFontStyle()" />underline
+
 </div>
 
 <script src="index.js"></script>
