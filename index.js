@@ -41,3 +41,18 @@ if (document.getElementById('italic').checked==true){
     }
 
 }
+
+function onChangePColor(){
+var storeColorP = document.getElementById('changePColorWholeList').value
+document.getElementById('styleParagraphID').style.color = storeColorP
+}
+
+function changeAlignmentFunc(id){
+    var storeAlignment = document.getElementById(id).value
+    document.getElementById('styleParagraphID').style.textAlign = storeAlignment
+}
+
+function changeSizePFunc(){
+    var storeSizePFunction = document.getElementById('changeSizeP').value
+    document.getElementById('styleParagraphID').style.fontSize = storeSizePFunction + "px"
+}
