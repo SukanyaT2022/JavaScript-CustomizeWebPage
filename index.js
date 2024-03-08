@@ -56,3 +56,32 @@ function changeSizePFunc(){
     var storeSizePFunction = document.getElementById('changeSizeP').value
     document.getElementById('styleParagraphID').style.fontSize = storeSizePFunction + "px"
 }
+// chnage paragrape to itlalic, bold, and underline
+function changeStyleP(){
+    if(document.getElementById('changeItalicP').checked==true){
+        document.getElementById('styleParagraphID').style.fontStyle = 'italic'
+    }else{
+        document.getElementById('styleParagraphID').style.fontStyle = 'normal'
+    }
+
+
+    if(document.getElementById('underLineP').checked==true){
+        document.getElementById('styleParagraphID').style.textDecoration = 'underline'
+    }else{
+        document.getElementById('styleParagraphID').style.textDecoration = 'none'
+    }
+
+    if(document.getElementById('changeBoldP').checked==true){
+        document.getElementById('styleParagraphID').style.fontWeight = 'bold'
+    }else{
+        document.getElementById('styleParagraphID').style.fontWeight = 'normal'
+    }
+}
+
+
+// <!-- change image height and width -->
+//parint coz it number
+function changeImageHeight(){
+    var storeImageHeight = parseInt(document.getElementById('changeImageHeight').value)
+    document.getElementById('targetImage').style.height = storeImageHeight + "px"
+}
