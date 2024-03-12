@@ -2,7 +2,7 @@
 
 function radioChangeBG(id){
     var storeBG = document.getElementById(id).value
-    document.body.style.backgroundColor = storeBG
+    document.getElementById('targetTextImage').style.backgroundColor = storeBG
 }
 function colorStyle(id){
     var storeColorStyle = document.getElementById(id).value
@@ -84,4 +84,15 @@ function changeStyleP(){
 function changeImageHeight(){
     var storeImageHeight = parseInt(document.getElementById('changeImageHeight').value)
     document.getElementById('targetImage').style.height = storeImageHeight + "px"
+}
+
+// change image width
+function changeImageWidth(){
+    var storeImageWidth = parseInt(document.getElementById('changeImageWidth').value)
+    document.getElementById('targetImage').style.width = storeImageWidth + "px"
+}
+
+function leftImage(){
+var storeLeftImage = document.getElementById('leftImage').value
+document.getElementById('alignBorderImage').style.textAlign = storeLeftImage
 }

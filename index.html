@@ -8,13 +8,16 @@
 </head>
 <body>
    
-    <div class="mainBox">
+    <div class="mainBox" >
         <!-- left side image, text, background -->
-        <div class="controlTextImg">
+        <div class="controlTextImg" id='targetTextImage'>
 
     <h2 id="styleHeadingID">Customize Your Own Web Page</h2>  
+
     <p id="styleParagraphID">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div id="alignBorderImage">
     <img src="https://plus.unsplash.com/premium_photo-1673254928968-b6513f32d43b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D" id='targetImage' />
+</div>
   
 </div>
 
@@ -112,6 +115,7 @@ change color for the paragraph -->
 <!-- checkbox can be anyname for radio buton have to have the same name -->
 <div class="controlEachSection">
 
+    <!-- radio button can choose only one-check box can use mutiple option -->
 <h3>Change font style</h3>
 <input type="checkbox" name="italic" value="italic" id="changeItalicP" onclick='changeStyleP()'/>
 <span class="targetSpanText">Italic</span>
@@ -121,30 +125,34 @@ change color for the paragraph -->
 <span class="targetSpanText">Bold</span>
 </div>
 
-<!-- change image height and width -->
+<!-- change image height-->
 <div class="controlEachSection">
 <h3>Change image height</h3>
-<input type="text" id="changeImageHeight"  />
+<input type="text" id="changeImageHeight"/>
 <button onclick="changeImageHeight()">Change Image Height</button>
 </div>
 
+<!-- change image width -->
+<div class="controlEachSection">
+    <h3>Change image width</h3>
+<input  type="text" id="changeImageWidth"/>
+<button onclick="changeImageWidth()">Change Image Width</button>
+</div>
+
+<!-- change alignment image -->
+<div class="controlEachSection">
+    <h3>Change alignment image</h3>
+<input type="radio" name="alignImg" value="left" onclick="leftImage"/>
+<span class="targetSpanText">Left</span>
+<input type="radio" name="alignImg" value="center" onclick="centerImage"/>
+<span class="targetSpanText">Center </span>
+<input type="radio" name="alignImg" value="right" onclick="rightImage"/>
+<span class="targetSpanText">Right</span>
+
+<!-- end -->
 </div>
 <!-- end tool bar here -->
 </div>
-
-
-
-
-
-
-
-<!-- chnage alignmant of image -->
-
-
-
-
-
-
 
 
 
