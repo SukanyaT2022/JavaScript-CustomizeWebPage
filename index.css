@@ -6,15 +6,29 @@ html,body{
     margin: 0;
     box-sizing: border-box;
 }
-#{
 
-}
 .mainBox{
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 50px;
-    background-color: aquamarine;
+display: flex;
 }
-.mainBox img{
+.controlTextImg img{
 height: 200px;
+}
+
+.controlTextImg h2, .controlTextImg p{
+margin: 20px 0px;
+width: 85%;
+    }
+
+.controlTextImg{
+width: 60%;
+}
+.controlToolBar{
+width: 40%;
+}
+
+.controlEachSection{
+    
 }

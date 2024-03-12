@@ -7,45 +7,78 @@
     <title>Document</title>
 </head>
 <body>
+   
     <div class="mainBox">
+        <!-- left side image, text, background -->
+        <div class="controlTextImg">
+
     <h2 id="styleHeadingID">Customize Your Own Web Page</h2>  
     <p id="styleParagraphID">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     <img src="https://plus.unsplash.com/premium_photo-1673254928968-b6513f32d43b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D" id='targetImage' />
-    <hr color="green" size="5px" >
+  
+</div>
 
+<!-- end image text start tool bar -->
+
+<div class="controlToolBar">
+    <div class="controlEachSection">
 <h3>For page background colors</h3>
 <!-- we use name= groupRadio--we use the same so user can choose only one radio
 if we use differeent name user can choose more than one radio -->
-<input type="radio"  name="groupRadio" id="radio1" value="red" onclick="radioChangeBG('radio1')"/> red
+<input type="radio"  name="groupRadio" id="radio1" value="red" onclick="radioChangeBG('radio1')"/>
+<span class="targetSpanText">red</span>
 <!-- use id in parameter so we know whic radio button -->
-<input type="radio"  name="groupRadio" id="radio2" value="pink" onclick="radioChangeBG('radio2')"/>pink
-<input type="radio"  name="groupRadio" id="radio3" value="blue" onclick="radioChangeBG('radio3')"/>blue
+<input type="radio"  name="groupRadio" id="radio2" value="pink" onclick="radioChangeBG('radio2')"/>
+<span class="targetSpanText">pink</span>
+<input type="radio"  name="groupRadio" id="radio3" value="blue" onclick="radioChangeBG('radio3')"/>
+<span class="targetSpanText">blue</span>
+</div>
 
 <!-- change font color -->
-<h3>For front color of heading</h3>
-<input type="radio"  name="groupFrontColor" id="frontColor1" value="pink" onclick="colorStyle('frontColor1')"/> pink
-<input type="radio"  name="groupFrontColor" id="frontColor2" value="Red" onclick="colorStyle('frontColor2')"/> red
-<input type="radio"  name="groupFrontColor" id="frontColor3" value="purple" onclick="colorStyle('frontColor3')"/> purple
-<br>
-<!-- change alignment header to left and right -->
-<h3>Change Alignment</h3>
-<input type="radio"  name="groupAlignment" id="left" value="left" onclick="changeAlignment('left')"/> left
-<input type="radio"  name="groupAlignment" id="right" value="right" onclick="changeAlignment('right')"/> right
-<input type="radio"  name="groupAlignment" id="center" value="center" onclick="changeAlignment('center')"/> center
+<div class="controlEachSection">
 
+<h3>For front color of heading</h3>
+<input type="radio"  name="groupFrontColor" id="frontColor1" value="pink" onclick="colorStyle('frontColor1')"/>
+<span class="targetSpanText">pink</span>
+<input type="radio"  name="groupFrontColor" id="frontColor2" value="Red" onclick="colorStyle('frontColor2')"/> 
+<span class="targetSpanText">red</span>
+<input type="radio"  name="groupFrontColor" id="frontColor3" value="purple" onclick="colorStyle('frontColor3')"/> 
+<span class="targetSpanText">purple</span>
+</div>
+
+
+<!-- change alignment header to left and right -->
+<div class="controlEachSection">
+
+<h3>Change Alignment</h3>
+<input type="radio"  name="groupAlignment" id="left" value="left" onclick="changeAlignment('left')"/> 
+<span class="targetSpanText">left</span>
+<input type="radio"  name="groupAlignment" id="right" value="right" onclick="changeAlignment('right')"/>
+<span class="targetSpanText">right</span>
+<input type="radio"  name="groupAlignment" id="center" value="center" onclick="changeAlignment('center')"/> 
+<span class="targetSpanText">center</span>
+</div>
+
+
+<div class="controlEachSection">
 <h3>Change Heading Font Size</h3>
 <p>Enter font size</p>
 <input type="text" id="changeFont" />
 <button onclick="changeFontSize()">Submit</button>
+</div>
 
+<div class="controlEachSection">
 <h3>Change font style</h3>
-use difffernt name or use check box - so user can choose more than one choice
-<input type="checkbox" name="italic" id = "italic" value="italic" onclick="changeFontStyle()" />italic
-<input type="checkbox" name="underline" id = "underline" value="underline" onclick="changeFontStyle()" />underline
-
+<!-- use difffernt name or use check box - so user can choose more than one choice -->
+<input type="checkbox" name="italic" id = "italic" value="italic" onclick="changeFontStyle()" />
+<span class="targetSpanText">italic</span>
+<input type="checkbox" name="underline" id = "underline" value="underline" onclick="changeFontStyle()" />
+<span class="targetSpanText">underline</span>
+</div>
 <!-- 
 change color for the paragraph -->
-<div>
+
+    <div class="controlEachSection">
     <h3>Change Font Color</h3>
 <select id="changePColorWholeList" onchange="onChangePColor()">
 <option>Red</option>
@@ -58,28 +91,46 @@ change color for the paragraph -->
 
 
 <!-- change font style, size, and alignment on paragraph -->
-<input type="radio" name="pAlignment" id="align1" value="left" onclick="changeAlignmentFunc('align1')"/>left
-<input type="radio" name="pAlignment" id="align2" value="right" onclick="changeAlignmentFunc('align2')"/>right
-<input type="radio" name="pAlignment" id="align3" value="center" onclick="changeAlignmentFunc('align3')"/>center
+<div class="controlEachSection">
+<h3>Change alignment text</h3>
+<input type="radio" name="pAlignment" id="align1" value="left" onclick="changeAlignmentFunc('align1')"/>
+<span class="targetSpanText">left </span>
+<input type="radio" name="pAlignment" id="align2" value="right" onclick="changeAlignmentFunc('align2')"/>
+<span class="targetSpanText">right</span>
+<input type="radio" name="pAlignment" id="align3" value="center" onclick="changeAlignmentFunc('align3')"/>
+<span class="targetSpanText">center</span>
+</div>
 
 <!-- change font size paragraph -->
-<div>
+<div class="controlEachSection">
+    <h3>Change size of paragraph</h3>
 <input type="text" id="changeSizeP"/>
-<button onclick="changeSizePFunc()">change size Ptag</button>
-
+<button onclick="changeSizePFunc()">Change size paragraph</button>
 </div>
 
 <!-- change font size on paragraph -->
 <!-- checkbox can be anyname for radio buton have to have the same name -->
-<input type="checkbox" name="italic" value="italic" id="changeItalicP" onclick='changeStyleP()'/>Italic
-<input type="checkbox" name="underline" value="underline" id="underLineP" onclick='changeStyleP()'/>Underline
-<input type="checkbox" name="bold" value="bold" id="changeBoldP" onclick='changeStyleP()'/>Bold
+<div class="controlEachSection">
+
+<h3>Change font style</h3>
+<input type="checkbox" name="italic" value="italic" id="changeItalicP" onclick='changeStyleP()'/>
+<span class="targetSpanText">Italic</span>
+<input type="checkbox" name="underline" value="underline" id="underLineP" onclick='changeStyleP()'/>
+<span class="targetSpanText">Underline </span>
+<input type="checkbox" name="bold" value="bold" id="changeBoldP" onclick='changeStyleP()'/>
+<span class="targetSpanText">Bold</span>
 </div>
 
 <!-- change image height and width -->
-
+<div class="controlEachSection">
+<h3>Change image height</h3>
 <input type="text" id="changeImageHeight"  />
 <button onclick="changeImageHeight()">Change Image Height</button>
+</div>
+
+</div>
+<!-- end tool bar here -->
+</div>
 
 
 
