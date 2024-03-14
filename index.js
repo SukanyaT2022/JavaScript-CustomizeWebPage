@@ -1,9 +1,10 @@
 
-
+//back whole background color
 function radioChangeBG(id){
     var storeBG = document.getElementById(id).value
     document.getElementById('targetTextImage').style.backgroundColor = storeBG
 }
+//change heading color
 function colorStyle(id){
     var storeColorStyle = document.getElementById(id).value
     document.getElementById('styleHeadingID').style.color = storeColorStyle
@@ -41,7 +42,7 @@ if (document.getElementById('italic').checked==true){
     }
 
 }
-
+//change color of text paragraph
 function onChangePColor(){
 var storeColorP = document.getElementById('changePColorWholeList').value
 document.getElementById('styleParagraphID').style.color = storeColorP
@@ -56,6 +57,12 @@ function changeSizePFunc(){
     var storeSizePFunction = document.getElementById('changeSizeP').value
     document.getElementById('styleParagraphID').style.fontSize = storeSizePFunction + "px"
 }
+//reset chnage size of paragraph
+
+function resetSizeParagraph(){
+    document.getElementById('styleParagraphID').style.fontSize = "15px"
+}
+
 // chnage paragrape to itlalic, bold, and underline
 function changeStyleP(){
     if(document.getElementById('changeItalicP').checked==true){
@@ -93,6 +100,28 @@ function changeImageWidth(){
 }
 
 function leftImage(){
-var storeLeftImage = document.getElementById('leftImage').value
+var storeLeftImage = document.getElementById('leftImageID').value
 document.getElementById('alignBorderImage').style.textAlign = storeLeftImage
+}
+
+function centerImage(){
+    var storeLeftImage = document.getElementById('centerImageID').value
+    document.getElementById('alignBorderImage').style.textAlign = storeLeftImage
+    }
+
+    function rightImage(){
+        var storeLeftImage = document.getElementById('rightImageID').value
+        document.getElementById('alignBorderImage').style.textAlign = storeLeftImage
+        }
+
+//clear all of them 
+
+function resetAll(){
+    document.getElementById('targetTextImage').style.backgroundColor = "white"
+    document.getElementById('styleParagraphID').style.fontSize = "15px"
+    document.getElementById('styleParagraphID').style.color = "black"
+    document.getElementById('styleParagraphID').style.textAlign = "left"
+    document.getElementById('styleHeadingID').style.backgroundColor = "white"
+    document.getElementById('styleHeadingID').style.color = "black"
+    document.getElementById('styleHeadingID').style.textAlign= "left"
 }

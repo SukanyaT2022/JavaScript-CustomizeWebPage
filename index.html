@@ -39,9 +39,11 @@ if we use differeent name user can choose more than one radio -->
 <span class="targetSpanText">pink</span>
 <input type="radio"  name="groupRadio" id="radio3" value="blue" onclick="radioChangeBG('radio3')"/>
 <span class="targetSpanText">blue</span>
+<input type="radio"  name="groupRadio" id="resetBGColorID" value="#fff" onclick="radioChangeBG('resetBGColorID')"/>
+<span class="targetSpanText">Reset</span>
 </div>
 
-<!-- change font color -->
+<!-- change heading font color -->
 <div class="controlEachSection">
 
 <h3>Change Heading front color</h3>
@@ -50,6 +52,8 @@ if we use differeent name user can choose more than one radio -->
 <input type="radio"  name="groupFrontColor" id="frontColor2" value="Red" onclick="colorStyle('frontColor2')"/> 
 <span class="targetSpanText">red</span>
 <input type="radio"  name="groupFrontColor" id="frontColor3" value="purple" onclick="colorStyle('frontColor3')"/> 
+<span class="targetSpanText">purple</span>
+<input type="radio"  name="groupFrontColor" id="resetHeadingColor" value="black" onclick="colorStyle('resetHeadingColor')"/> 
 <span class="targetSpanText">purple</span>
 </div>
 
@@ -92,6 +96,7 @@ change color for the paragraph -->
 <option>Pink</option>
 <option>Orange</option>
 <option>Blue</option>
+<option>Black</option>
 </select>
 </div>
 
@@ -110,6 +115,7 @@ change color for the paragraph -->
 <span class="targetSpanText">right</span>
 <input type="radio" name="pAlignment" id="align3" value="center" onclick="changeAlignmentFunc('align3')"/>
 <span class="targetSpanText">center</span>
+
 </div>
 
 <!-- change font size paragraph -->
@@ -117,6 +123,7 @@ change color for the paragraph -->
     <h3>Change Paragraph Size</h3>
 <input type="text" id="changeSizeP"/>
 <button onclick="changeSizePFunc()">Submit</button>
+<button onclick="resetSizeParagraph()">Reset</button>
 </div>
 
 <!-- change font size on paragraph -->
@@ -150,11 +157,11 @@ change color for the paragraph -->
 <!-- change alignment image -->
 <div class="controlEachSection">
     <h3>Change Alignment Image</h3>
-<input type="radio" name="alignImg" value="left" onclick="leftImage"/>
+<input type="radio" name="alignImg" value="left" onclick="leftImage()" id="leftImageID"/>
 <span class="targetSpanText">Left</span>
-<input type="radio" name="alignImg" value="center" onclick="centerImage"/>
+<input type="radio" name="alignImg" value="center" onclick="centerImage()" id="centerImageID"/>
 <span class="targetSpanText">Center </span>
-<input type="radio" name="alignImg" value="right" onclick="rightImage"/>
+<input type="radio" name="alignImg" value="right" onclick="rightImage()" id="rightImageID"/>
 <span class="targetSpanText">Right</span>
 
 <!-- end -->
@@ -162,6 +169,8 @@ change color for the paragraph -->
 
 <!-- below closing div for half tool bar for media query -->
 </div>
+
+<button onclick="resetAll()">Reset All</button>
 
 <!-- end tool bar here -->
 </div>
