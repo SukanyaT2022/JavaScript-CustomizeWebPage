@@ -23,7 +23,7 @@
 </div>
 
 <!-- end image text start tool bar -->
-
+<div class="wrapWholeToolBar">
 <div class="controlToolBar">
 
     <div class="halfToolbarMediaQuery">
@@ -39,6 +39,7 @@ if we use differeent name user can choose more than one radio -->
 <span class="targetSpanText">pink</span>
 <input type="radio"  name="groupRadio" id="radio3" value="blue" onclick="radioChangeBG('radio3')"/>
 <span class="targetSpanText">blue</span>
+<br>
 <input type="radio"  name="groupRadio" id="resetBGColorID" value="#fff" onclick="radioChangeBG('resetBGColorID')"/>
 <span class="targetSpanText">Reset</span>
 </div>
@@ -53,8 +54,9 @@ if we use differeent name user can choose more than one radio -->
 <span class="targetSpanText">red</span>
 <input type="radio"  name="groupFrontColor" id="frontColor3" value="purple" onclick="colorStyle('frontColor3')"/> 
 <span class="targetSpanText">purple</span>
+<br>
 <input type="radio"  name="groupFrontColor" id="resetHeadingColor" value="black" onclick="colorStyle('resetHeadingColor')"/> 
-<span class="targetSpanText">purple</span>
+<span class="targetSpanText">black</span>
 </div>
 
 
@@ -170,8 +172,9 @@ change color for the paragraph -->
 <!-- below closing div for half tool bar for media query -->
 </div>
 
-<button onclick="resetAll()">Reset All</button>
-
+</div>
+<button onclick="resetAll()" class="resetAll">Reset All</button>
+</div>
 <!-- end tool bar here -->
 </div>
 
