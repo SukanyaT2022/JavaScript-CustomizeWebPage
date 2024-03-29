@@ -20,7 +20,7 @@ display: flex;
 }
 .wrapWholeToolBar{
     width: 40%;
-    background-color: rgb(223, 210, 210);
+    background-color: #fff4df;
     padding:20px;  
 }
 .controlTextImg img{
@@ -40,7 +40,7 @@ padding-right: 30px;
 }
 .controlToolBar{
 width: 100%;
-background-color: rgb(223, 210, 210);
+background-color: #fff4df;
 padding:20px;
 display: flex;
 }
@@ -52,7 +52,10 @@ margin-bottom: 20px;
     padding: 2px 5px;
     /* background: linear-gradient(to right,aqua,rgb(211, 104, 211)); */
     border: none;
-    background-color: rgb(255, 196, 0);
+    background-color: #ff7b00;
+}
+.controlEachSection button:hover{
+    background-color: #ffa652;
 }
 .controlEachSection input{
     padding: 2px 5px;
@@ -72,12 +75,12 @@ padding: 5px 10px;
 margin: auto;
 display: block;
 font-weight: bold;
-background-color: yellow;
+background-color: #ff7b00;
 border: none;
 margin-bottom: 20px;
 }
 .resetAll:hover{
-background-color: aqua;
+background-color: #ffa652;
 }
 /* ipad pro*/
 @media screen and (max-width:1024px){
@@ -103,8 +106,7 @@ background-color: aqua;
          .wrapWholeToolBar{
             width: 100%;
             margin-top: 30px;
-         
-
+        
         }
    #styleHeadingID{
     font-size: 20px;
@@ -127,6 +129,12 @@ width: 50%;
         width: 100%;
 
         }
+        /* reset button */
+.resetAll{
+    width: 50%;
+    padding: 8px 10px;
+ 
+    }
 
     
 }
@@ -138,8 +146,8 @@ width: 50%;
     }
     .wrapWholeToolBar{
         width: 100%;
-        background-color: rgb(223, 210, 210);
         padding:0px;  
+        margin-bottom: 20px;
     }
     .controlTextImg img{
         height: 120px;
@@ -174,6 +182,12 @@ font-size: 10px;
             padding: 10px 10px;
 
         }
+          /* reset button */
+.resetAll{
+    width: 70%;
+    padding: 8px 10px;
+ 
+    }
       
 
 }
